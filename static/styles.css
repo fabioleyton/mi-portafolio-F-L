@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: aliceblue;
+  color: #333;
+  padding: 0;
+}
+
+
+/* cabecera general */
+.hero {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  animation: fadeIn 1.5s ease-in-out both;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 8;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(8);
+  }
+}
+
+
+/* contenido de la cabecera */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideUp 1.2s ease forwards;
+}
+/* animacion secundaria */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(8);
+  }
+}
+
+
+section {
+  margin: 2rem 2rem;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 12px;
+  
+}
+
+
+/* tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+a.github-link {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.github-link:hover {
+  background-color: #2980b9;
+}
+
+/* seccion */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* sobre mi */
+.sobre-mi {
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: justify;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.sobre-mi h2 {
+  font-size: 25px;
+  color: #0054b4;
+  text-align: center;
+}
+
+/* contacto */
+.contacto {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 60px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contacto h2 {
+  font-size: 28px;
+  color: #0054b4;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 16px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* formulario contacto */
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.formulario-contacto button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #0056b3;
+}
+
+
+/* html gracias */
+.mensaje {
+  background-color: white;
+  display: inline-block;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: aparecer 1s ease;
+}
+
+.mensaje h1 {
+  color: #4caf50;
+}
+
+.mensaje p {
+  font-size: 20px;
+  color: #333;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
