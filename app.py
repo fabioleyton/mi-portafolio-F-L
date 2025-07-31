@@ -44,6 +44,10 @@ def home():
 def gracias():
     return render_template("gracias.html")
 
+@app.route("/hoja_de_vida")
+def hojaDeVida():
+    return render_template ("Hoja-de-vida.html")
+
 # Este bloque verifica si el script se está ejecutando directamente 
 # (no importado como módulo)
 if __name__ == "__main__":

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo %}Gracias{% endblock %}
+
+{% block encabezado %}
+    <h1>Hoja De Vida</h1>
+{% endblock %}
+
+{% block contenido %}
+<section class="cv-seccion">
+    <div>
+        <h1>Mi hoja de vida</h1>
+        <iframe src="{{url_for("static", filename="Hola de vida Fabio Avendaño.pdf")}}" width="100%" height="600px"></iframe>
+        <br>
+        <a href="{{url_for("static", filename="Hola de vida Fabio Avendaño.pdf")}}" class="btn btn-success mt-3" download="">Descargar hoja de vida</a>
+        <a href="{{url_for('home')}}" class="btn btn-success mt-3">Volver al inicio</a>
+    </div>
+</section>
+{% endblock %}
