@@ -46,7 +46,7 @@ def gracias():
 
 @app.route("/hoja_de_vida")
 def hojaDeVida():
-    return render_template ("Hoja-de-vida.html")
+    return render_template ("Hoja_de_vida.html")
 
 # Este bloque verifica si el script se está ejecutando directamente 
 # (no importado como módulo)
