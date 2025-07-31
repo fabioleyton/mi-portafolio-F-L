@@ -12,7 +12,7 @@ app = Flask(__name__)
 # lista de proyectos
 proyectos = [
     {
-        "nombre": "Sistema ded gestion de materiales TOVWAREMEN",
+        "nombre": "Sistema ded gestion de materiales TovWareMen",
         "descripcion": "Sistema web desarrollado con Symfony y MySQL para asociaciones, con filtros dinámicos y exportación a Excel.",
         "tecnologias": "Symfony, PHP, MySQL",
         "link": "https://tovwaremen.com.co/",
