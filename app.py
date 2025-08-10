@@ -38,7 +38,7 @@ proyectos = [
     {
         "nombre": "peticiones",
         "descripcion": "se crea una lista de peticiones con un contador de fecha para tener el control de las peticiones y terminan automaticamente despues de un tiempo determinado",
-        "tecnologias": "php, html, css",
+        "tecnologias": "php, html, css, mysql",
         "link": "https://github.com/fabioleyton/peticiones.git",
     },
     {
@@ -50,7 +50,7 @@ proyectos = [
     {
         "nombre": "proyecto SENA",
         "descripcion": "proyecto de inventarios donde se puede ingresar, productos, personas y usuarios para el control de inventarios de los almacenes",
-        "tecnologias": "php, html, css, js",
+        "tecnologias": "php, html, css, js, mysql",
         "link": "https://github.com/yerermid/inventarios.git",
     },
     {
